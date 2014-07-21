@@ -53,8 +53,8 @@ module.exports = function (grunt) {
       ],
       task_files: [
         './Gruntfile.js',
-        'tasks/*.js',
-        'package.json'
+        './tasks/**',
+        './package.json'
       ]
     }
   });

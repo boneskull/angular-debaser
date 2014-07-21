@@ -1,4 +1,7 @@
 {
+  "options": {
+    "reload": true
+  },
   "gruntfile": {
     "files": [
       "<%= task_files %>"
@@ -28,17 +31,15 @@
       "karma:scratch:run"
     ]
   },
-  "all-docs": {
+  "docs": {
     "files": [
       "<%= src_files %>",
       "<%= task_files %>",
-      "./jsdoc.conf.json"
+      "./assets/**"
     ],
     "tasks": [
       "clean",
-      "concat:docs",
-      "concat:dev-docs",
-      "jsdoc"
+      "ngdocs"
     ]
   }
 }

@@ -1,4 +1,5 @@
 {
-  "docs": "./docs/**",
-  "dev-docs": "./dev-docs/**"
+  "docs": [
+    "./docs/**"
+  ]
 }

@@ -1,0 +1,32 @@
+{
+  "options": {
+    "html5Mode": false,
+    "startPage": "/index",
+    "title": "<%= pkg.name %>",
+    "image": "./assets/decipher-logo.png",
+    "imageLink": "<%= pkg.homepage %>",
+    "titleLink": "#/index",
+    "bestMatch": true
+  },
+  "index": {
+    "src": [
+      "./assets/index.ngdoc"
+    ],
+    "title": "Overview"
+  },
+  "api": {
+    "src": [
+      "./lib/globals.js",
+      "./lib/module.js",
+      "./lib/debaser.js",
+      "./lib/superpowers.js"
+    ],
+    "title": "API"
+  },
+  "development": {
+    "src": [
+      "./lib/*.js"
+    ],
+    "title": "Development"
+  }
+}

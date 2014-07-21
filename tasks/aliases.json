@@ -1,6 +1,6 @@
 {
   "build": [
-    "concat:dist",
+    "concat",
     "uglify"
   ],
   "test": [
@@ -27,13 +27,7 @@
     "bower-install-simple"
   ],
   "docs": [
-    "clean:docs",
-    "concat:docs",
-    "jsdoc:main"
-  ],
-  "dev-docs": [
-    "clean:dev-docs",
-    "concat:dev-docs",
-    "jsdoc:dev"
+    "clean",
+    "ngdocs"
   ]
 }
