@@ -1,0 +1,9 @@
+{
+  "main": {
+    "src": "<%= src_files %>",
+    "dest": "README.md"
+  },
+  "options": {
+    "private": false
+  }
+}
