@@ -1,4 +1,4 @@
-/*! angular-debaser - v0.3.1 - 2014-07-30
+/*! angular-debaser - v0.3.1 - 2014-08-03
 * https://github.com/decipherinc/angular-debaser
 * Copyright (c) 2014 Decipher, Inc.; Licensed MIT */
 
@@ -298,7 +298,7 @@
         }
         // likewise, maybe no debug() either
         $provide.decorator('$log', ['$delegate', function ($delegate) {
-          $delegate.debug = $delegate.debug || options.debugEnabled ? $delegate.log : angular.noop;
+          $delegate.debug = !$delegate.debug && options.debugEnabled ? $delegate.log : angular.noop;
           return $delegate;
         }]);
       }
